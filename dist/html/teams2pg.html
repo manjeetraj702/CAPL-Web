@@ -17,16 +17,16 @@
  <div class="bg-[#1f306b] h-20 shadow-lg shadow-slate-600 ">
     <div class="flex place-content-between">
          <div class="flex items-center">
-            <i class="fa-solid fa-bars text-white text-3xl ml-5 lg:opacity-0 " id="bar"></i>
+            <i class="fa-solid fa-bars text-white text-xl ml-3 lg:hidden " id="bar"></i>
            
-             <img src="../image/home/logo.png" alt="" class="h-20 ml-10 ">
+             <img src="../image/home/logo.png" alt="" class="h-20 ">
              <div> 
              <h3 class="text-white text-l font-bold">Coding Age </h3>
                <h3 class="text-white text-l font-bold">Premier</h3>
                <h3 class="text-white text-l font-bold">League</h3>
             </div>
          </div> 
-         <div class="z-40  font-mono text-white font-medium text-lg  content-center lg:flex justify-center mt-5 lg:mr-64  lg:ml-10 hidden md:hidden">
+         <div class="z-40  font-mono text-white font-medium text-lg content-center lg:flex justify-center mt-5 lg:mr-64  lg:ml-10 hidden md:hidden">
             <ul class="flex"> 
                 <li>
                 <a href="../html/matches.html" class="pr-10 ">MATCHES</a>
@@ -73,7 +73,7 @@
           </div>
         </div>
       </div>
-      <div class="z-20  bg-[#3f5194] font-mono text-white text-2xl font-bold  hidden w-64 h-[390px]" id="sidebar">
+      <div class="z-20  bg-[#3f5194] font-mono text-white text-2xl font-bold absolute hidden w-64 h-[390px]" id="sidebar">
         <ul > 
             <li>
             <a href="../html/matches.html" class="pl-10 border-b-2 block h-12 place-content-center">MATCHES</a>
@@ -107,24 +107,23 @@
 <!-- NAVBAR END -->
 
     <!-- HERO SECTION START -->
-    <section class="h-auto w-full bg-center bg-cover" style="background-image: url('../image/teams/bgimg.jpg');">
-        <div class="container">
-            <div class="box bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../image/teams/mi.jpeg');">
+    <section class="h-auto w-full bg-center bg-cover relative -z-10" style="background-image: url('../image/teams/bgimg.jpg');">
+        <div class="py-10 w-9/10 px-20 mx-auto flex justify-center">
+            <div class=" h-[100px] w-[250px] mx-10 mb-10 shadow-md transition duration-1000 rounded-md bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../image/teams/mi.jpeg');">
             </div>
-            <div class="box bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../image/teams/kkr.jpeg');">
+            <div class=" h-[100px] w-[250px] mx-10 mb-10 shadow-md transition duration-1000 rounded-md bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../image/teams/kkr.jpeg');">
             </div>
-            <div class="box bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../image/teams/csk.jpg');">
+            <div class=" h-[100px] w-[250px] mx-10 mb-10 shadow-md transition duration-1000 rounded-md bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../image/teams/csk.jpg');">
             </div>
-            <div class="box bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../image/teams/rr.png');">
+            <div class=" h-[100px] w-[250px] mx-10 mb-10 shadow-md transition duration-1000 rounded-md bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../image/teams/gt.jpeg');">
             </div>
-            <div class="box bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../image/teams/rcb.png');">
+            <div class=" hover:scale-100 hover:z-10 h-[100px] w-[250px] mx-10 mb-10 shadow-md transition duration-1000 rounded-md bg-cover bg-no-repeat bg-center" onclick="tap(event)" style="background-image: url('../image/teams/rcb.png');">
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="flex p-8 justify-center relative overflow-hidden">
-                <img class="h-[100px] rounded-lg shadow-lg transition shadow-white hover:translate-y-2 duration-100 imgt" src="../image/teams/mi.jpeg" id="teamimg" alt="Team Image">
-
-                <h1 class="text-4xl text-white p-4 font-bold textshadow">Team Name</h1>
+                <img class="h-[100px] rounded-lg shadow-lg transition shadow-white hover:translate-y-2 duration-100 before:absolute before:w-[300px] before:h-[300px] before:top-1/4 before:left-[-25%] before:bg-[conic-gradient(#04b0ee_20deg,transparent_120deg)] before:animate-spin  after:w-11/12 after:h-11/12 after:bg-[#020223] after:absolute after:top-3 after:left-3" src="../image/teams/mi.jpeg" id="teamimg" alt="Team Image">
+                <h1 class="text-4xl text-white p-4 font-bold ">Team Name</h1>
             </div>
             <div class="p-8">
                 <div class="bg-sky-950 text-white p-4 mb-1 text-lg rounded hover:shadow-xl hover:shadow-white">
@@ -143,7 +142,7 @@
     <div class="bg-gray-100">
     <section class=" ">
         <div class="text-2xl h-12 w-40 m-10 font-bold place-items-center text-indigo-900 hover:bg-orange-500 
-        hover:text-white rounded-br-lg rounded-tl-lg p-3 border-2 border-indigo-950">BATTERs</div>
+        hover:text-white rounded-br-lg rounded-tl-lg p-3">BATTERs</div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 m-5 ">
             <div class="bg-white rounded-lg items-center justify-center ">
                 <div class="flex justify-between mt-3">
@@ -226,7 +225,7 @@
             <div class="bg-white rounded-lg items-center justify-center ">
                     <i class="fa-solid fa-baseball-bat-ball text-2xl justify-center mt-3 ml-5"></i>
                 <div class="flex justify-center items-center md:flex-col">
-                    <img class="h-[220px]" src="../im../image/teams/rohit.png">
+                    <img class="h-[220px]" src="../image/teams/rohit.png">
                     <div class="flex justify-center">
                         <div><h1 class="text-2xl font-bold">Name</h1>
                              <h2 class="text-lg">Batter</h2>

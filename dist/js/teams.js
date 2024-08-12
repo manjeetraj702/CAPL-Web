@@ -18,26 +18,26 @@ function tap(event) {
     element.style.borderColor = "yellow"; // Change border color to yellow
     element.style.borderWidth = '2px';    // Change border width to 2px
     let img=document.getElementById("teamimg")
-    img.src="../assets/csk.jpg"
+    img.src="../image/teams/csk.jpg"
     document.getElementById('coach').innerHTML="&nbsp; Gaurav Bhaiya"
     document.getElementById('captain').innerHTML="&nbsp; Gaurav Bhaiya"
    
 }
 
 
-tailwind.config = {
-    theme: {
-        extend:{
-            Keyframes:{
-            fullSpin:{
-                '100%':{
-                    transform: 'rotate(-360deg)'
-                }
-            }
-            },
-            animation:{
-                fullSpin:'fullSpin 3s linear infinite'
-            }
-        }
-    }
-}
+// tailwind.config = {
+//     theme: {
+//         extend:{
+//             Keyframes:{
+//             fullSpin:{
+//                 '100%':{
+//                     transform: 'rotate(-360deg)'
+//                 }
+//             }
+//             },
+//             animation:{
+//                 fullSpin:'fullSpin 3s linear infinite'
+//             }
+//         }
+//     }
+// }

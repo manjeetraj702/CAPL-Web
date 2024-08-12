@@ -161,6 +161,8 @@
 
   /* IMAGE SLIDER */
 
+  
+
    /* POINT TABLE */
   
    .scrollbar-hide::-webkit-scrollbar {
@@ -199,46 +201,7 @@
 
    /* MAGIC MOMENTS */
 
-   .bor{
-    @apply  border-yellow-300 
-  }
-.container {
-    width: 90%;
-    padding: 20px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.box {
-    height: 100px;
-    width: 250px;
-    margin: 0 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, -1);
-    transition: 1s;
-    border-radius: 5px;
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.box:hover {
-    transform: scale(1.2);
-    z-index: 2;
-}
-
-.imgt::before{
-    @apply content-[''] absolute bg-[conic-gradient(#04b0ee_20deg, trasparent_120deg)] w-[300px]
-    h-[300px] top-[25%] left-[-25%] animate-fullSpin
-}
-
-.imgt::after{
-    @apply content-[''] w-[94%] h-[94%] bg-[#020223]
-    absolute top-[3%] left-[3%] 
-}
   
-.textshadow{
-    text-shadow: 12px -24px 20px black;
-} 
  
 }
 
@@ -334,8 +297,35 @@
       }
     
     }
-
     /* RESULT */
+
+    /*
+  
+  .container {
+    @apply w-9/10 px-20 mx-auto flex justify-center;
+  }
+  
+  .box {
+    @apply h-100px w-250px mx-10 mb-10 shadow-md transition duration-1000 rounded-md;
+  }
+  
+  .box:hover {
+    @apply scale-110 z-10;
+  }
+  
+  .imgt::before {
+    @apply absolute w-300px h-300px top-1/4 left-[-25%] bg-[conic-gradient(#04b0ee_20deg,transparent_120deg)] animate-spin;
+  }
+  
+  .imgt::after {
+    @apply w-11/12 h-11/12 bg-[#020223] absolute top-3 left-3;
+  }
+  
+  .textshadow {
+    @apply text-shadow-lg;
+  } */
+
+    
 
 /* TEAM SECTION CSS STARTS */ 
 
@@ -371,10 +361,15 @@
       h-[300px] top-[25%] left-[-25%] animate-fullSpin
   }
 
-  .imgt::after{
-      @apply content-[''] w-[94%] h-[94%] bg-[#020223]
-      absolute top-[3%] left-[3%] 
-  }
+ .imgt::after {
+  @apply content-[''];
+  @apply w-11/12;
+  @apply h-11/12;
+  @apply bg-[#020223];
+  @apply absolute;
+  @apply top-3;
+  @apply left-3;
+}
     
   .textshadow{
       text-shadow: 12px -24px 20px black;

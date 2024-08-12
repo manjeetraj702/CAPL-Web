@@ -17,22 +17,22 @@
   <div class="bg-[#1f306b] h-20 shadow-lg shadow-slate-600 ">
     <div class="flex place-content-between">
          <div class="flex items-center">
-            <i class="fa-solid fa-bars text-white text-3xl ml-5 lg:opacity-0 " id="bar"></i>
+            <i class="fa-solid fa-bars text-white text-xl ml-3 lg:hidden " id="bar"></i>
            
-             <img src="../image/home/logo.png" alt="" class="h-20 ml-10 ">
+             <img src="../image/home/logo.png" alt="" class="h-20 ">
              <div> 
              <h3 class="text-white text-l font-bold">Coding Age </h3>
                <h3 class="text-white text-l font-bold">Premier</h3>
                <h3 class="text-white text-l font-bold">League</h3>
             </div>
          </div> 
-         <div class="z-40  font-mono text-white font-medium text-lg  content-center lg:flex justify-center mt-5 lg:mr-64  lg:ml-10 hidden md:hidden">
+         <div class="z-40 font-mono text-white font-medium text-lg  content-center lg:flex justify-center mt-5 lg:mr-64  lg:ml-10 hidden md:hidden">
             <ul class="flex"> 
                 <li>
                 <a href="/WEB/dist/html/matches.html" class="pr-10 ">MATCHES</a>
             </li>
             <li>
-            <a href="/WEB/dist/html/player.html" class="pr-10 ">STATS</a>
+            <a href="/WEB/dist/html/stats.html" class="pr-10 ">STATS</a>
         </li>
 
             <a href="/WEB/dist/html/points_table1.html" class="pr-10 ">POINTS TABLE</a>
@@ -73,7 +73,7 @@
           </div>
         </div>
       </div>
-      <div class="z-20  bg-[#3f5194] font-mono text-white text-2xl font-bold  hidden w-64 h-[390px]" id="sidebar">
+      <div class="z-20 absolute bg-[#3f5194] font-mono text-white text-2xl font-bold  hidden w-64 h-[390px]" id="sidebar">
         <ul > 
             <li>
             <a href="/WEB/dist/html/matches.html" class="pl-10 border-b-2 block h-12 place-content-center">MATCHES</a>
@@ -112,7 +112,7 @@
 
 
 <div class="flex items-center justify-center my-36 relative -z-50   ">
-  <div class="flex items-center absolute z-0 pl-5 rounded-lg bg-[url('../image/players/stadium.jpg')] w-11/12">
+  <div class="flex items-center absolute z-0 pl-5 rounded-lg  bg-[url('../image/players/stadium.jpg')] w-11/12">
 
     <div class="flex items-center ">
       <div class="text-white text-[12rem] font-bold mr-4">1</div>
@@ -184,40 +184,42 @@
   <div class="flex justify-between place-items-center ml-10">
     <div class="main-wrapper relative group z-40  ">
       <button class=" pl-5 block h-12">Teams <i class="fa-solid fa-caret-down"></i></button>
-      <ul class="dropdown-menu group-hover:block hidden absolute ">
+      <ul class="dropdown-menu group-hover:block hidden absolute border-2">
         <li>
           <a href=""
-            class="flex bg-white text-black  font-bold w-25 h-12 border-gray-300  border-b-2  hover:pl-10 hover:text-xl ">
-            <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl">CSK</a>
+            class="flex bg-white text-black p-2 font-bold w-40 h-12 border-gray-300  border-b-2  hover:pl-10 hover:text-xl ">
+            <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5">
+            <h1>CSK</h1>
+          </a>
         </li>
         <li>
           <a href=""
-            class="flex bg-white text-black pl-2 font-bold w-56 h-12 border-gray-300   border-b-2   hover:pl-10 hover:text-xl ">
-            <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl"> RCB</a>
+            class="flex bg-white text-black p-2 font-bold w-40 h-12 border-gray-300   border-b-2   hover:pl-10 hover:text-xl ">
+            <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5"> RCB</a>
         </li>
         <li>
           <a href=""
-            class="flex bg-white text-black pl-2 font-bold w-56 h-12 border-gray-300   border-b-2   hover:pl-10 hover:text-xl ">
-            <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl"> MI</a>
+            class="flex bg-white text-black p-2 font-bold w-40 h-12 border-gray-300   border-b-2   hover:pl-10 hover:text-xl ">
+            <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5"> MI</a>
         </li>
         <li>
           <a href=""
-            class="bg-white text-black pl-2 font-bold w-56 h-12 border-gray-300 hover:pl-10 hover:text-xl  flex"> <img
-              src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl"> LSG</a>
+            class="bg-white text-black p-2 font-bold w-40 h-12 border-gray-300 hover:pl-10 hover:text-xl  flex"> <img
+              src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5"> LSG</a>
         </li>
       </ul>
     </div>
 
     <div class="main-wrapper relative group z-40  ">
       <button class=" pl-5 block h-12">Player-Type <i class="fa-solid fa-caret-down"></i></button>
-      <ul class="dropdown-menu group-hover:block hidden absolute ">
+      <ul class="dropdown-menu group-hover:block hidden absolute border-2">
         <li>
           <a href=""
-            class="block bg-white text-black pl-2 font-bold w-56 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-xl ">Batter</a>
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-xl ">Batter</a>
         </li>
         <li>
           <a href=""
-            class="block bg-white text-black pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-xl ">Bowler</a>
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-xl ">Bowler</a>
         </li>
       </ul>
     </div>
@@ -228,22 +230,22 @@
       <ul class="dropdown-menu group-hover:block hidden absolute ">
         <li>
           <a href=""
-            class="block bg-white text-black pl-2 font-bold w-56 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-xl ">Season
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-xl ">Season
             24</a>
         </li>
         <li>
           <a href=""
-            class="block bg-white text-black pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-xl ">Season
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-xl ">Season
             23</a>
         </li>
         <li>
           <a href=""
-            class="block bg-white text-black pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-xl ">Season
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-xl ">Season
             22</a>
         </li>
         <li>
           <a href=""
-            class="block bg-white text-black pl-2 font-bold w-56 h-12 border-gray-300 place-content-center  hover:pl-10 hover:text-xl ">Season
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300 place-content-center  hover:pl-10 hover:text-xl ">Season
             21</a>
         </li>
       </ul>
@@ -269,17 +271,16 @@
 <!-- BATTER START -->
 
 
-<div class="px-10">
+<div class="px-10 ">
   <div class="overflow-x-auto">
 
-    <table class="w-full table-auto text-sm text-left overflow-scroll">
-      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-white">
+    <table class="w-full table-auto text-sm text-left overflow-scroll ">
+      <thead class="text-xs text-white uppercase bg-blue-900 dark:bg-gray-700 dark:text-white">
         <tr>
           <th class="px-6 py-3">POS</th>
           <th class="px-6 py-3">Batters</th>
           <th class="px-6 py-3">MAT</th>
           <th class="px-6 py-3">INNS</th>
-          <th class="px-6 py-3">NO</th>
           <th class="px-6 py-3">RUNS</th>
           <th class="px-6 py-3">HS</th>
           <th class="px-6 py-3">AVG</th>
@@ -307,7 +308,6 @@
           </td>
           <td class="px-6 py-4">15</td>
           <td class="px-6 py-4">15</td>
-          <td class="px-6 py-4">3</td>
           <td class="px-6 py-4">741</td>
           <td class="px-6 py-4">113*</td>
           <td class="px-6 py-4">61.75</td>
@@ -333,7 +333,6 @@
           </td>
           <td class="px-6 py-4">14</td>
           <td class="px-6 py-4">14</td>
-          <td class="px-6 py-4">3</td>
           <td class="px-6 py-4">583</td>
           <td class="px-6 py-4">108*</td>
           <td class="px-6 py-4">53.00</td>
@@ -359,7 +358,6 @@
           </td>
           <td class="px-6 py-4">16</td>
           <td class="px-6 py-4">14</td>
-          <td class="px-6 py-4">3</td>
           <td class="px-6 py-4">573</td>
           <td class="px-6 py-4">84*</td>
           <td class="px-6 py-4">52.09</td>
@@ -385,7 +383,6 @@
           </td>
           <td class="px-6 py-4">15</td>
           <td class="px-6 py-4">15</td>
-          <td class="px-6 py-4">1</td>
           <td class="px-6 py-4">567</td>
           <td class="px-6 py-4">102</td>
           <td class="px-6 py-4">40.50</td>
@@ -411,7 +408,6 @@
           </td>
           <td class="px-6 py-4">16</td>
           <td class="px-6 py-4">15</td>
-          <td class="px-6 py-4">4</td>
           <td class="px-6 py-4">531</td>
           <td class="px-6 py-4">86</td>
           <td class="px-6 py-4">48.27</td>
@@ -437,7 +433,6 @@
           </td>
           <td class="px-6 py-4">12</td>
           <td class="px-6 py-4">12</td>
-          <td class="px-6 py-4">1</td>
           <td class="px-6 py-4">527</td>
           <td class="px-6 py-4">103</td>
           <td class="px-6 py-4">47.91</td>
@@ -458,9 +453,8 @@
 
 <div class="px-10">
   <div class="overflow-x-auto">
-
     <table class="w-full table-auto text-sm text-left overflow-scroll">
-      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-white">
+      <thead class="text-xs text-white uppercase bg-blue-900 dark:bg-gray-700 dark:text-white">
         <tr>
           <th class="px-6 py-3">POS</th>
           <th class="px-6 py-3">BOWLERS</th>
@@ -470,11 +464,9 @@
           <th class="px-6 py-3">RUNS</th>
           <th class="px-6 py-3">WICKET</th>
           <th class="px-6 py-3">BBI</th>
-          <th class="px-6 py-3">AVJ</th>
+          <th class="px-6 py-3">AVG</th>
           <th class="px-6 py-3">ECON</th>
           <th class="px-6 py-3">SR</th>
-          <th class="px-6 py-3">4W</th>
-          <th class="px-6 py-3">5W</th>
         </tr>
       </thead>
       <tbody>
@@ -484,7 +476,7 @@
           </th>
           <td class="px-6 py-4">
             <div class="flex items-center">
-              <img class="w-10 h-10 rounded-full" src="i../image/players/K L Rahul.png" alt="Player Image" />
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
               <div class="ml-3">
                 <p class="font-medium text-gray-900">Virat Kohli</p>
                 <p class="text-gray-600 text-sm">RCB</p>
@@ -500,8 +492,6 @@
           <td class="px-6 py-4">479</td>
           <td class="px-6 py-4">154.69</td>
           <td class="px-6 py-4">1</td>
-          <td class="px-6 py-4">5</td>
-          <td class="px-6 py-4">62</td>
         </tr>
         <tr class="bg-white border-b dark:border-gray-700">
           <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
@@ -525,8 +515,6 @@
           <td class="px-6 py-4">413</td>
           <td class="px-6 py-4">141.16</td>
           <td class="px-6 py-4">1</td>
-          <td class="px-6 py-4">4</td>
-          <td class="px-6 py-4">58</td>
         </tr>
         <tr class="bg-white border-b dark:border-gray-700">
           <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
@@ -550,8 +538,7 @@
           <td class="px-6 py-4">384</td>
           <td class="px-6 py-4">149.21</td>
           <td class="px-6 py-4">0</td>
-          <td class="px-6 py-4">4</td>
-          <td class="px-6 py-4">40</td>
+
         </tr>
         <tr class="bg-white border-b dark:border-gray-700">
           <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
@@ -575,8 +562,6 @@
           <td class="px-6 py-4">296</td>
           <td class="px-6 py-4">191.55</td>
           <td class="px-6 py-4">1</td>
-          <td class="px-6 py-4">4</td>
-          <td class="px-6 py-4">64</td>
         </tr>
         <tr class="bg-white border-b dark:border-gray-700">
           <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
@@ -600,8 +585,7 @@
           <td class="px-6 py-4">346</td>
           <td class="px-6 py-4">153.46</td>
           <td class="px-6 py-4">0</td>
-          <td class="px-6 py-4">5</td>
-          <td class="px-6 py-4">48</td>
+
         </tr>
         <tr class="bg-white border-b dark:border-gray-700">
           <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
@@ -625,8 +609,7 @@
           <td class="px-6 py-4">373</td>
           <td class="px-6 py-4">141.28</td>
           <td class="px-6 py-4">1</td>
-          <td class="px-6 py-4">2</td>
-          <td class="px-6 py-4">48</td>
+
         </tr>
       </tbody>
     </table>
