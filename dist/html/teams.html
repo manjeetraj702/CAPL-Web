@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css-file link -->
+    <link rel="stylesheet" href="/dist/style.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <title>Team</title>
+</head>
+
+<body class="italic" > 
+ <!-- NAVBAR STRAT-->
+
+ <div class="bg-[#1f306b] h-16 shadow-sm shadow-blue-900">
+    <div class="flex place-content-between ">
+      <div class="flex items-center">
+        <span class="lg:hidden">
+          <i class="fa-solid fa-bars text-white text-xl ml-3 " id="bar"></i>
+        </span>
+        <img src="../image/home/logo.png" alt="" class="h-16">
+        <div>
+          <h3 class="text-white text-sm font-bold">CRICK</h3>
+          <h3 class="text-white text-sm font-bold">AGE</h3>
+        </div>
+      </div>
+      <div
+        class="z-40 relative font-mono text-white font-medium text-lg  content-center lg:flex justify-center mt-5 lg:mr-44  lg:ml-10 hidden md:hidden">
+        <ul class="flex">
+          <li>
+            <a href="../html/matches.html" class="pr-10 ">MATCHES</a>
+          </li>
+          <li>
+            <a href="../html/stats.html" class="pr-10 ">STATS</a>
+          </li>
+
+          <a href="../html/pointsTable.html" class="pr-10 ">POINTS TABLE</a>
+          <li>
+            <a href="../html/index.html" class="pr-10 ">HOME</a>
+          </li>
+        </ul>
+        <div class="main-wrapper relative group z-40">
+          <button class="pr-10  ">MORE</button>
+          <ul class="dropdown-menu group-hover:block hidden absolute mt-3">
+            <li>
+              <a href="../html/teams.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-t-lg place-content-center border-b-2  hover:pl-10 hover:text-2xl ">TEAMS</a>
+            </li>
+            <li>
+              <a href="../html/photos.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">PHOTOS</a>
+            </li>
+            <li>
+              <a href="../html/results.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">RESULTS</a>
+            </li>
+            <li>
+              <a href="../html/iplAbout.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-b-lg place-content-center  hover:pl-10 hover:text-2xl">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass text-white  text-2xl font-bold mt-5 mr-5" id="icon"></i>
+      </div>
+
+    </div>
+    <div class=" bg-transparent  flex-col justify-center hidden  z-20" id="search">
+      <div class="relative p-12 w-full sm:max-w-2xl sm:mx-auto">
+        <div class="overflow-hidden z-50 rounded-full relative p-3">
+          <form role="form" class="relative flex z-50 bg-white rounded-full">
+            <input type="text" placeholder="enter your search here"
+              class="rounded-full flex-1 px-6 py-4 text-gray-700 focus:outline-none ">
+            <button
+              class="bg-[#2e3d71] text-white rounded-full font-semibold px-8 py-4 hover:bg-[#1f306b] focus:bg-[#2e3d71] focus:outline-none">Search</button>
+          </form>
+          <div class="glow glow-1 z-10 bg-pink-400 absolute"></div>
+          <div class="glow glow-2 z-20 bg-purple-400 absolute"></div>
+          <div class="glow glow-3 z-30 bg-yellow-400 absolute"></div>
+          <div class="glow glow-4 z-40 bg-[#1f306b] absolute"></div>
+        </div>
+      </div>
+    </div>
+    <div class="z-20  bg-[#3f5194] font-mono text-white text-2xl font-bold  hidden w-64 h-[450px]" id="sidebar">
+      <ul>
+        <li>
+          <a href="../html/matches.html" class="pl-10 border-b-2 block h-12 place-content-center">MATCHES</a>
+        </li>
+        <li>
+          <a href="../html/stats.html" class="pl-10 border-b-2 block h-12 place-content-center">STATS</a>
+        </li>
+        <li>
+          <a href="../html/pointsTable.html" class="pl-10 border-b-2 block h-12 place-content-center">POINTS TABLE</a>
+        </li>
+        <li>
+          <a href="../html/index.html" class="pl-10 border-b-2 block h-12 place-content-center">HOME</a>
+        </li>
+      </ul>
+      <div class="main-wrapper relative group z-40  ">
+        <button class="pl-10  block h-12">MORE</button>
+        <ul class="dropdown-menu group-hover:block hidden absolute ">
+          <li>
+            <a href="../html/teams.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-2xl ml-4">TEAMS</a>
+          </li>
+          <li>
+            <a href="../html/photos.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">PHOTOS</a>
+          </li>
+          <li>
+            <a href="../html/results.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">RESULTS</a>
+          </li>
+          <li>
+            <a href="../html/iplAbout.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300 place-content-center  hover:pl-10 hover:text-2xl ml-4">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!-- NAVBAR END -->
+
+    <!-- TEAM SECTION START -->
+     
+    <div
+    class="text-3xl  font-bold text-white h-28 flex  bg-cover bg-center items-end " style="background-image: url('../image/home/head_bg2.avif');">
+    <h1 class="ml-10 mb-3">TEAMS</h1>
+  </div>
+    <section class=" w-full pb-5 py-10 px-8 bg-cover bg-center bg-opacity-45 bg-no-repeat " style="background-image: url('../image/matches/white_bg.jpeg');">
+        <div class="top-5 flex justify-center items-center">
+            <img class="lg:h-60 h-40" src="../image/teams/logo.png" alt="logo">
+            <div>
+            <div class="text-[#1f306b] font-bold lg:text-4xl text-2xl font-serif">CRICK </div>
+            <div class="text-[#1f306b] font-bold lg:text-4xl text-2xl font-serif">AGE</div>
+          </div>
+        </div>
+        
+        <div class="grid lg:grid-cols-3 gap-6 md:grid-cols-2 grid-cols-1">
+        <a href="../html/teams2pg.html">
+            <div class="shadow-lg rounded-lg relative overflow-hidden group h-[200px] bg-cover bg-center" style="background-image: url('../image/teams/mi.jpeg');">
+                <div class="absolute bg-[#1f306b] bg-opacity-75 -translate-x-full 
+                rounded-lg top-0 left-0 w-full h-full flex items-center justify-center
+                group-hover:translate-x-0 duration-500">
+                    <div class="text-center">
+                        <h3 class="text-white text-2xl font-bold mb-2">Mumbai Indians</h3>
+                        <h4 class="text-white text-lg font-normal mb-2">CRICK AGE</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="../html/teams2pg.html">
+            <div class="shadow-lg rounded-lg relative overflow-hidden group h-[200px] bg-cover bg-center" style="background-image: url('../image/teams/gt.jpeg');">
+                <div class="absolute bg-[#1f306b] bg-opacity-75 -translate-x-full 
+                rounded-lg top-0 left-0 w-full h-full flex items-center justify-center
+                group-hover:translate-x-0 duration-500">
+                    <div class="text-center">
+                        <h3 class="text-white text-2xl font-bold mb-2">Gujarat Titans</h3>
+                        <h4 class="text-white text-lg font-normal mb-2">CRICK AGE</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="../html/teams2pg.html">
+            <div class="shadow-lg rounded-lg relative overflow-hidden group h-[200px] bg-cover bg-center" style="background-image: url('../image/teams/kkr.jpeg');">
+                <div class="absolute bg-[#1f306b] bg-opacity-75 -translate-x-full 
+                rounded-lg top-0 left-0 w-full h-full flex items-center justify-center
+                group-hover:translate-x-0 duration-500">
+                    <div class="text-center">
+                        <h3 class="text-white text-2xl font-bold mb-2">KKR</h3>
+                        <h4 class="text-white text-lg font-normal mb-2">CAPL</h4>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        </div>
+    </section>
+    <!-- TEAM SECTION ENDS -->
+
+
+    <!-- FOOTER START -->
+
+    <div class=" mx-auto px-4 py-6 w-full bg-[#1f306b]">
+        <div class="flex justify-between flex-wrap">
+          <div class="bg-[#1f306b] rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-white mb-4">TEAM</h2>
+            <ul class="list-disc list-inside text-gray-400">
+              <li class="hover:underline"><a href="">Chennai Super Kings</a></li>
+              <li class="hover:underline"><a href="">Delhi Capitals</a></li>
+              <li class="hover:underline"><a href="">Gujarat Titans</a></li>
+              <li class="hover:underline"><a href="">Kolkata Knight Riders</a></li>
+              <li class="hover:underline"><a href="">Lucknow Super Giants</a></li>
+              <li class="hover:underline"><a href="">Mumbai Indians</a></li>
+              <li class="hover:underline"><a href="">Punjab Kings</a></li>
+            </ul>
+          </div>
+          <div class="bg-[#1f306b] rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-white mb-4">ABOUT</h2>
+            <ul class="list-disc list-inside text-gray-400">
+              <li class="hover:underline"><a href="">About Us</a></li>
+              <li class="hover:underline"><a href="">Anti Corruption Policy</a></li>
+              <li class="hover:underline"><a href="">Anti Doping Policy</a></li>
+              <li class="hover:underline"><a href="">TUE Application Form</a></li>
+              <li class="hover:underline"><a href="">Anti Discrimination Policy</a></li>
+              <li class="hover:underline"><a href="">Clothing And Equipment Regulations</a></li>
+              <li class="hover:underline"><a href="">Code Of Conduct For Players And Teams Officials</a></li>
+            </ul>
+          </div>
+          <div class="bg-[#1f306b] rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-white mb-4">GUIDELINES</h2>
+            <ul class="list-disc list-inside text-gray-400 ">
+              <li class="hover:underline"><a href="">IPL Code Of Conduct For Match Officials</a></li>
+              <li class="hover:underline"><a href="">Brand And Protection Guidelines</a></li>
+              <li class="hover:underline"><a href="">Governing Council</a></li>
+              <li class="hover:underline"><a href="">Match Playing Conditions</a></li>
+              <li class="hover:underline"><a href="">PMOA Minimum Standard</a></li>
+              <li class="hover:underline"><a href="">Suspect Action Policy</a></li>
+            </ul>
+          </div>
+          <div class="bg-[#1f306b] rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-white mb-4">CONTACT</h2>
+            <ul class="list-disc list-inside text-gray-400 ">
+              <li class="hover:underline"><a href="">Contact Us</a></li>
+              <li class="hover:underline"><a href="">Sponsorship</a></li>
+              <li class="hover:underline"><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER END -->
+    
+    <script src="../js/teams.js"></script>
+</body>
+</html>

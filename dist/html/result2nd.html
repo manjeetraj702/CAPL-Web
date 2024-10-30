@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Result 2nd</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="/dist/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+
+ <!-- NAVBAR STRAT-->
+
+ <div class="bg-[#1f306b] h-16 shadow-sm shadow-blue-900">
+  <div class="flex place-content-between ">
+    <div class="flex items-center">
+      <span class="lg:hidden">
+        <i class="fa-solid fa-bars text-white text-xl ml-3 " id="bar"></i>
+      </span>
+      <img src="../image/home/logo.png" alt="" class="h-16">
+      <div>
+        <h3 class="text-white text-sm font-bold">CRICK</h3>
+        <h3 class="text-white text-sm font-bold">AGE</h3>
+      </div>
+    </div>
+    <div
+      class="z-40 relative font-mono text-white font-medium text-lg  content-center lg:flex justify-center mt-5 lg:mr-44  lg:ml-10 hidden md:hidden">
+      <ul class="flex">
+        <li>
+          <a href="../html/matches.html" class="pr-10 ">MATCHES</a>
+        </li>
+        <li>
+          <a href="../html/stats.html" class="pr-10 ">STATS</a>
+        </li>
+
+        <a href="../html/pointsTable.html" class="pr-10 ">POINTS TABLE</a>
+        <li>
+          <a href="../html/index.html" class="pr-10 ">HOME</a>
+        </li>
+      </ul>
+      <div class="main-wrapper relative group z-40">
+        <button class="pr-10  ">MORE</button>
+        <ul class="dropdown-menu group-hover:block hidden absolute mt-3">
+          <li>
+            <a href="../html/teams.html"
+              class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-t-lg place-content-center border-b-2  hover:pl-10 hover:text-2xl ">TEAMS</a>
+          </li>
+          <li>
+            <a href="../html/photos.html"
+              class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">PHOTOS</a>
+          </li>
+          <li>
+            <a href="../html/results.html"
+              class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">RESULTS</a>
+          </li>
+          <li>
+            <a href="../html/iplAbout.html"
+              class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-b-lg place-content-center  hover:pl-10 hover:text-2xl">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <i class="fa-solid fa-magnifying-glass text-white  text-2xl font-bold mt-5 mr-5" id="icon"></i>
+    </div>
+
+  </div>
+  <div class=" bg-transparent  flex-col justify-center hidden  z-20" id="search">
+    <div class="relative p-12 w-full sm:max-w-2xl sm:mx-auto">
+      <div class="overflow-hidden z-50 rounded-full relative p-3">
+        <form role="form" class="relative flex z-50 bg-white rounded-full">
+          <input type="text" placeholder="enter your search here"
+            class="rounded-full flex-1 px-6 py-4 text-gray-700 focus:outline-none ">
+          <button
+            class="bg-[#2e3d71] text-white rounded-full font-semibold px-8 py-4 hover:bg-[#1f306b] focus:bg-[#2e3d71] focus:outline-none">Search</button>
+        </form>
+        <div class="glow glow-1 z-10 bg-pink-400 absolute"></div>
+        <div class="glow glow-2 z-20 bg-purple-400 absolute"></div>
+        <div class="glow glow-3 z-30 bg-yellow-400 absolute"></div>
+        <div class="glow glow-4 z-40 bg-[#1f306b] absolute"></div>
+      </div>
+    </div>
+  </div>
+  <div class="z-20 relative bg-[#3f5194] font-mono text-white text-2xl font-bold  hidden w-64 h-[450px]" id="sidebar">
+    <ul>
+      <li>
+        <a href="../html/matches.html" class="pl-10 border-b-2 block h-12 place-content-center">MATCHES</a>
+      </li>
+      <li>
+        <a href="../html/stats.html" class="pl-10 border-b-2 block h-12 place-content-center">STATS</a>
+      </li>
+      <li>
+        <a href="../html/pointsTable.html" class="pl-10 border-b-2 block h-12 place-content-center">POINTS TABLE</a>
+      </li>
+      <li>
+        <a href="../html/index.html" class="pl-10 border-b-2 block h-12 place-content-center">HOME</a>
+      </li>
+    </ul>
+    <div class="main-wrapper relative group z-40  ">
+      <button class="pl-10  block h-12">MORE</button>
+      <ul class="dropdown-menu group-hover:block hidden absolute ">
+        <li>
+          <a href="../html/teams.html"
+            class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-2xl ml-4">TEAMS</a>
+        </li>
+        <li>
+          <a href="../html/photos.html"
+            class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">PHOTOS</a>
+        </li>
+        <li>
+          <a href="../html/results.html"
+            class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">RESULTS</a>
+        </li>
+        <li>
+          <a href="../html/iplAbout.html"
+            class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300 place-content-center  hover:pl-10 hover:text-2xl ml-4">ABOUT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- NAVBAR END -->
+
+ <!-- MAIN CONTENT -->
+ <div class="container ">
+  <div class="bg-gradient-to-r from-blue-950 to-blue-500 text-white  w-full mx-auto p-6 mb-8">
+    <div class="flex flex-col lg:flex-row justify-between items-center mb-6">
+      <div class="flex items-center space-x-4 mb-4 lg:mb-0">
+        <img src="../image/players/rcb.jpg" alt="RCB" class="w-16 h-16 rounded-full">
+        <div>
+          <div class="text-4xl font-bold">114/2</div>
+          <div class="text-lg">10.3 Overs</div>
+        </div>
+      </div>
+      <div class="text-4xl font-bold text-yellow-500 mb-4 lg:mb-0">FINAL</div>
+      <div class="flex items-center space-x-4">
+        <div>
+          <div class="text-4xl font-bold">113</div>
+          <div class="text-lg">18.3 Overs</div>
+        </div>
+        <img src="../image/players/rcb.jpg" alt="Team Logo" class="w-16 h-16 rounded-full">
+      </div>
+    </div>
+    <div class="text-center text-lg mb-6">
+      Patliputra Complex Stadium, Patna <br>
+      03 AUG 2024, 7:30 PM IST
+    </div>
+    <div class="bg-gradient-to-r from-blue-500 to-blue-950 text-center py-4 rounded-md font-bold">
+      Royal Challengers Bangalore Won By 8 Wickets (Winners)
+    </div>
+  </div>
+  <div class="shadow-lg rounded-lg p-6 bg-white">
+    <div class="flex items-center justify-between mb-6 border-b pb-4">
+      <div class="flex items-center space-x-4">
+        <img src="../image/players/rcb.jpg" alt="RCB" class="w-16 h-16 rounded-full">
+        <h2 class="text-3xl font-bold text-black">RCB</h2>
+      </div>
+      <div class="text-right">
+        <p class="text-lg font-semibold text-gray-700">Overs (10.3): <span class="text-black">114/2</span></p>
+      </div>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-blue-900 text-white">
+          <tr>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase ">Batter</th>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase ">R</th>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase ">B</th>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase ">4s</th>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase ">6s</th>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase ">SR</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+          <tr>
+            <td class="px-6 py-4">Rahmanullah Gurbaz (wk)</td>
+            <td class="px-6 py-4">39</td>
+            <td class="px-6 py-4">32</td>
+            <td class="px-6 py-4">5</td>
+            <td class="px-6 py-4">2</td>
+            <td class="px-6 py-4">121.88</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 ">Sunil Narine</td>
+            <td class="px-6 py-4 ">6</td>
+            <td class="px-6 py-4 ">2</td>
+            <td class="px-6 py-4 ">0</td>
+            <td class="px-6 py-4 ">1</td>
+            <td class="px-6 py-4 ">300.00</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 ">Venkatesh Iyer</td>
+            <td class="px-6 py-4 ">52</td>
+            <td class="px-6 py-4 ">26</td>
+            <td class="px-6 py-4 ">4</td>
+            <td class="px-6 py-4 ">3</td>
+            <td class="px-6 py-4 ">200.00</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 ">Shreyas Iyer (c)</td>
+            <td class="px-6 py-4 ">6</td>
+            <td class="px-6 py-4 ">3</td>
+            <td class="px-6 py-4 ">1</td>
+            <td class="px-6 py-4 ">0</td>
+            <td class="px-6 py-4 ">200.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-6 overflow-x-auto">
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-blue-900 text-white">
+          <tr>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase">Bowler</th>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase">O</th>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase">R</th>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase">W</th>
+            <th class="px-6 py-3 text-left text-xs font-medium uppercase">Dots</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200">
+          <tr>
+            <td class="px-6 py-4 ">Bhuvneshwar Kumar</td>
+            <td class="px-6 py-4 ">2</td>
+            <td class="px-6 py-4 ">25</td>
+            <td class="px-6 py-4 ">0</td>
+            <td class="px-6 py-4 ">5</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 ">Pat Cummins</td>
+            <td class="px-6 py-4 ">2</td>
+            <td class="px-6 py-4 ">18</td>
+            <td class="px-6 py-4 ">1</td>
+            <td class="px-6 py-4 ">7</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 ">T Natarajan</td>
+            <td class="px-6 py-4 ">2</td>
+            <td class="px-6 py-4 ">29</td>
+            <td class="px-6 py-4 ">0</td>
+            <td class="px-6 py-4 ">2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+ </div>
+<!-- MAIN CONTENT END -->
+
+<!-- MATCH DETAIL SECTION -->
+<div class="max-w-6xl mx-auto bg-white shadow-md rounded-lg p-4 mt-8">
+  <h2 class="text-2xl font-bold mb-4">Match Details</h2>
+  <table class="min-w-full bg-white">
+    <tbody>
+      <tr class="border-t">
+        <td class="px-6 py-4 text-sm font-medium text-gray-900">Tournament</td>
+        <td class="px-6 py-4 text-sm text-gray-500">CODING AGE PREMIER LEAGUE</td>
+      </tr>
+      <tr class="border-t">
+        <td class="px-6 py-4 text-sm font-medium text-gray-900">Match</td>
+        <td class="px-6 py-4 text-sm text-gray-500">GUDDU BHAIYA V/S BABLU BHAIYA</td>
+      </tr>
+      <tr class="border-t">
+        <td class="px-6 py-4 text-sm font-medium text-gray-900">Toss Details</td>
+        <td class="px-6 py-4 text-sm text-gray-500">Guddu bhaiya Won The Toss And Elected To Bat</td>
+      </tr>
+      <tr class="border-t">
+        <td class="px-6 py-4 text-sm font-medium text-gray-900">Venue</td>
+        <td class="px-6 py-4 text-sm text-gray-500">Patliputra Stadium</td>
+      </tr>
+      <tr class="border-t">
+        <td class="px-6 py-4 text-sm font-medium text-gray-900">On Field Umpires</td>
+        <td class="px-6 py-4 text-sm text-gray-500">Ratishankar Shukla</td>
+      </tr>
+      <tr class="border-t">
+        <td class="px-6 py-4 text-sm font-medium text-gray-900">Third Umpire</td>
+        <td class="px-6 py-4 text-sm text-gray-500">Munna Bhaiya</td>
+      </tr>
+      <tr class="border-t">
+        <td class="px-6 py-4 text-sm font-medium text-gray-900">Referee</td>
+        <td class="px-6 py-4 text-sm text-gray-500">Beena Tripathi</td>
+      </tr>
+      <tr class="border-t">
+        <td class="px-6 py-4 text-sm font-medium text-gray-900">Player Of The Match</td>
+        <td class="px-6 py-4 text-sm text-gray-500">Kaleen Bhaiya</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- FOOTER START -->
+
+<div class="container mx-auto min-w-full px-4 py-6 bg-[#1f306b]">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">TEAM</h2>
+      <ul class="list-disc list-inside text-gray-400">
+        <li class="hover:underline"><a href="">Chennai Super Kings</a></li>
+        <li class="hover:underline"><a href="">Delhi Capitals</a></li>
+        <li class="hover:underline"><a href="">Gujarat Titans</a></li>
+        <li class="hover:underline"><a href="">Kolkata Knight Riders</a></li>
+        <li class="hover:underline"><a href="">Lucknow Super Giants</a></li>
+        <li class="hover:underline"><a href="">Mumbai Indians</a></li>
+        <li class="hover:underline"><a href="">Punjab Kings</a></li>
+      </ul>
+    </div>
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">ABOUT</h2>
+      <ul class="list-disc list-inside text-gray-400">
+        <li class="hover:underline"><a href="">About Us</a></li>
+        <li class="hover:underline"><a href="">Anti Corruption Policy</a></li>
+        <li class="hover:underline"><a href="">Anti Doping Policy</a></li>
+        <li class="hover:underline"><a href="">TUE Application Form</a></li>
+        <li class="hover:underline"><a href="">Anti Discrimination Policy</a></li>
+        <li class="hover:underline"><a href="">Clothing And Equipment Regulations</a></li>
+        <li class="hover:underline"><a href="">Code Of Conduct For Players And Teams Officials</a></li>
+      </ul>
+    </div>
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">GUIDELINES</h2>
+      <ul class="list-disc list-inside text-gray-400 ">
+        <li class="hover:underline"><a href="">IPL Code Of Conduct For Match Officials</a></li>
+        <li class="hover:underline"><a href="">Brand And Protection Guidelines</a></li>
+        <li class="hover:underline"><a href="">Governing Council</a></li>
+        <li class="hover:underline"><a href="">Match Playing Conditions</a></li>
+        <li class="hover:underline"><a href="">PMOA Minimum Standard</a></li>
+        <li class="hover:underline"><a href="">Suspect Action Policy</a></li>
+      </ul>
+    </div>
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">CONTACT</h2>
+      <ul class="list-disc list-inside text-gray-400 ">
+        <li class="hover:underline"><a href="">Contact Us</a></li>
+        <li class="hover:underline"><a href="">Sponsorship</a></li>
+        <li class="hover:underline"><a href="">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER END -->
+</body>
+<script src="/web CAPL/WEB/dist/js/common.js"></script>
+</html>

@@ -1,0 +1,380 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+      /* SEARCH */
+      .matchchange{
+        @apply bg-[#1f306b];
+        @apply text-white ;
+      }
+      .glow {
+        top: -10%;
+        left: -10%;
+        width: 120%;
+        height: 120%;
+        border-radius: 100%;
+      }
+      
+      .glow-1 {
+        animation: glow1 4s linear infinite;
+      }
+      
+      .glow-2 {
+        animation: glow2 4s linear infinite;
+        animation-delay: 100ms;
+      }
+      
+      .glow-3 {
+        animation: glow3 4s linear infinite;
+        animation-delay: 200ms;
+      }
+      
+      .glow-4 {
+        animation: glow4 4s linear infinite;
+        animation-delay: 300ms;
+      }
+      
+      @keyframes glow1 {
+        0% {
+          transform: translate(10%, 10%) scale(1);
+        }
+        25% {
+          transform: translate(-10%, 10%) scale(1);
+        }
+        50% {
+          transform: translate(-10%, -10%) scale(1);
+        }
+        75% {
+          transform: translate(10%, -10%) scale(1);
+        }
+        100% {
+          transform: translate(10%, 10%) scale(1);
+        }
+      }
+      
+      @keyframes glow2 {
+        0% {
+          transform: translate(-10%, -10%) scale(1);
+        }
+        25% {
+          transform: translate(10%, -10%) scale(1);
+        }
+        50% {
+          transform: translate(10%, 10%) scale(1);
+        }
+        75% {
+          transform: translate(-10%, 10%) scale(1);
+        }
+        100% {
+          transform: translate(-10%, -10%) scale(1);
+        }
+      }
+      
+      @keyframes glow3 {
+        0% {
+          transform: translate(-10%, 10%) scale(1);
+        }
+        25% {
+          transform: translate(-10%, -10%) scale(1);
+        }
+        50% {
+          transform: translate(10%, -10%) scale(1);
+        }
+        75% {
+          transform: translate(10%, 10%) scale(1);
+        }
+        100% {
+          transform: translate(-10%, 10%) scale(1);
+        }
+      }
+      
+      @keyframes glow4 {
+        0% {
+          transform: translate(10%, -10%) scale(1);
+        }
+        25% {
+          transform: translate(10%, 10%) scale(1);
+        }
+        50% {
+          transform: translate(-10%, 10%) scale(1);
+        }
+        75% {
+          transform: translate(-10%, -10%) scale(1);
+        }
+        100% {
+          transform: translate(10%, -10%) scale(1);
+        }
+      }
+      
+      /* SEARCH */
+
+       /* IMAGE SLIDER */
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .carousel-prev {
+    left: 20px;
+  }
+  
+  .carousel-next {
+    right: 20px;
+  }
+  
+  .carousel-prev:hover,
+  .carousel-next:hover {
+    color: #333;
+  }
+  
+  .carousel-item.hidden {
+    opacity: 0;
+  }
+
+  /* IMAGE SLIDER */
+
+  
+
+   /* POINT TABLE */
+  
+   .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+
+     /* POINT TABLE */
+
+   /* bouncing ball */
+
+   .ball{
+    animation: movement 3s linear infinite, squashing 3s linear infinite;
+  }
+
+  .ball :nth-child(2){
+    animation-delay: 2s;
+    opacity: 6;
+  }
+
+  @keyframes movement {
+    16%, 48%, 78% {
+      top:300px;
+      animation-timing-function: ease-out;
+    }
+    32% {
+      top:50px;
+      animation-timing-function: ease-in;
+    }
+    62% {
+        top:150px;
+        animation-timing-function: ease-in;
+    }
+    90% {
+      top:200px;
+      animation-timing-function: ease-in;
+    }
+    100% {
+      top:250px;
+      left: 100%;
+      animation-timing-function: ease-out;
+      transform: rotate(360deg);
+    }
+
+    
+  }
+
+  @keyframes squashing {
+    16%, 48%, 78%{
+      height: 25px;
+      border-radius: 50px 50px 25px 25px;
+    }
+    15%, 47%, 77%, 18%, 50%, 80%{
+      height: 30px;
+      border-radius: 50%;
+      transform: scale(2);
+    }
+  }
+
+  /* bouncing ball */
+
+ /*Bat Ball*/ 
+/* 
+ .balll{
+  animation: bounce 0.5s alternate cubic-bezier(.5,0.05,1,.5) infinite;
+ }
+
+ @keyframes bounce {
+  from {
+    transform: translate3d(0,0,0);
+  }
+  to {
+    transform: translate3d(0, 200px , 0);
+  }
+ }
+
+ .ballbox{
+  animation: movement 4s linear infinite;
+  animation-fill-mode: forwards;
+  transform: scale(.2);
+ }
+
+ @keyframes movement {
+  70% {
+    transform: scale(.2);
+  }
+  100% {
+    transform: scale(2.4);
+  }
+ }
+
+ .bat {
+  background: linear-gradient(0deg, rgba(139,95,36,1)0%,rgba(236,172,62,1)13%, rgba(200,173,69,1)100%);
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
+  transform: rotate(40deg);
+  animation: batting 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+ }
+
+ @keyframes batting {
+  70% {
+    transform:rotate(40deg) rotateX(0deg) ;
+  }
+  80% {
+    transform: rotateX(-40deg);
+  }
+ } */
+
+  /*Bat Ball*/ 
+ 
+}
+
+    /* RESULT */
+    
+    .scroll-x::-webkit-scrollbar {
+      display: none;
+    }
+    .scroll-x {
+      -ms-overflow-style: none;  
+      scrollbar-width: none;  
+    }
+
+    .scroll-x {
+      max-width: 100%;
+      overflow-x: auto;
+      /* overscroll-behavior-x: contain; */
+    }
+    
+    .wrapper {
+      --size: clamp(12rem, 1rem + 50vw, 20rem);
+      --gutter: 2rem;
+      --gap: 4rem;
+      /* scroll-snap-type: x mandatory; */
+      display: grid;
+      padding-block: var(--gutter);
+      grid-template-columns:
+        [full-start] 1fr
+        [content-start]
+        min(var(--size), 100% - var(--gutter) * 2)
+        [content-end]
+        1fr [full-end];
+    }
+    
+    .items {
+      grid-area: content;
+      display: flex;
+      gap: var(--gap);
+    
+      &::after {
+        content: "";
+        padding-inline-end: max(
+          var(--gutter),
+          (100vw - var(--size)) / 2 - var(--gutter)
+        );
+      }
+    
+      > * {
+        display: grid;
+        place-content: center;
+        flex-shrink: 0;
+        inline-size: var(--size);
+        aspect-ratio: 4 / 5;
+        scroll-snap-align: center;
+        border-radius: 0.5rem;
+      }
+    }
+    
+    @supports (animation-timeline: view()) {
+      .items > * {
+        --scale: 0.9;
+        --offset: var(--gap); 
+        animation: scale linear both, fade linear both;
+        animation-timeline: view(inline);
+        animation-range: cover 30% cover 70%, cover 5% cover 95%;
+      }
+    
+      @keyframes scale {
+        from,
+        to {
+          scale: var(--scale);
+        }
+        50% {
+          scale: 1;
+        }
+        from {
+          translate: var(--offset) 0;
+        }
+        to {
+          translate: calc(var(--offset) * -1) 0;
+        }
+      }
+    
+      @keyframes fade {
+        from,
+        to {
+          opacity: 0;
+        }
+        10%,
+        90% {
+          opacity: 1;
+        }
+      }
+      
+    
+    }
+    /* RESULT */
+
+ 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Objects in a Div</title>
+    <style>
+        .item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .item:hover {
+            background-color: #f0f0f0;
+        }
+        #detailContainer {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="objectContainer"></div>
+    <div id="detailContainer">Click an item to see details here.</div>
+
+    <script>
+        const items = [
+            { id: 1, name: 'Item 1', description: 'This is item 1' },
+            { id: 2, name: 'Item 2', description: 'This is item 2' },
+            { id: 3, name: 'Item 3', description: 'This is item 3' }
+        ];
+
+        function renderObjects() {
+            const container = document.getElementById('objectContainer');
+            container.innerHTML = ''; // Clear existing items
+
+            items.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'item';
+                itemDiv.textContent = `${item.name}: ${item.description}`; // Fixed interpolation syntax
+                itemDiv.setAttribute('data-id', item.id); // Store the id in a data attribute
+                itemDiv.addEventListener('click', () => handleObjectClick(item.id)); // Add click event
+                container.appendChild(itemDiv);
+            });
+        }
+
+        function handleObjectClick(id) {
+            const item = items.find(item => item.id === id); // Find the clicked item
+            if (item) {
+                // Modify the item's properties as needed
+                item.description = 'This item has been clicked!';
+                renderObjects(); // Re-render the objects to reflect changes
+                displayItemDetails(item); // Show details in the separate div
+            }
+        }
+
+        function displayItemDetails(item) {
+            const detailContainer = document.getElementById('detailContainer');
+            detailContainer.innerHTML = `<strong>${item.name}</strong><br>${item.description}`; // Fixed interpolation syntax
+        }
+
+        document.addEventListener('DOMContentLoaded', renderObjects);
+    </script>
+</body>
+</html>

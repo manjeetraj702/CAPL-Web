@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OVERALL STATS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="/dist/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-auto italic" >
+
+  <!-- NAVBAR STRAT-->
+
+  <div class="bg-[#1f306b] h-16 shadow-sm shadow-blue-900">
+    <div class="flex place-content-between ">
+      <div class="flex items-center">
+        <span class="lg:hidden">
+          <i class="fa-solid fa-bars text-white text-xl ml-3 " id="bar"></i>
+        </span>
+        <img src="../image/home/logo.png" alt="" class="h-16">
+        <div>
+          <h3 class="text-white text-sm font-bold">CRICK</h3>
+          <h3 class="text-white text-sm font-bold">AGE</h3>
+        </div>
+      </div>
+      <div
+        class="z-40 relative font-mono text-white font-medium text-lg  content-center lg:flex justify-center mt-5 lg:mr-44  lg:ml-10 hidden md:hidden">
+        <ul class="flex">
+          <li>
+            <a href="../html/matches.html" class="pr-10 ">MATCHES</a>
+          </li>
+          <li>
+            <a href="../html/stats.html" class="pr-10 ">STATS</a>
+          </li>
+
+          <a href="../html/pointsTable.html" class="pr-10 ">POINTS TABLE</a>
+          <li>
+            <a href="../html/index.html" class="pr-10 ">HOME</a>
+          </li>
+        </ul>
+        <div class="main-wrapper relative group z-40">
+          <button class="pr-10  ">MORE</button>
+          <ul class="dropdown-menu group-hover:block hidden absolute mt-3">
+            <li>
+              <a href="../html/teams.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-t-lg place-content-center border-b-2  hover:pl-10 hover:text-2xl ">TEAMS</a>
+            </li>
+            <li>
+              <a href="../html/photos.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">PHOTOS</a>
+            </li>
+            <li>
+              <a href="../html/results.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">RESULTS</a>
+            </li>
+            <li>
+              <a href="../html/iplAbout.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-b-lg place-content-center  hover:pl-10 hover:text-2xl">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass text-white  text-2xl font-bold mt-5 mr-5" id="icon"></i>
+      </div>
+
+    </div>
+    <div class=" bg-transparent  flex-col justify-center hidden  z-20" id="search">
+      <div class="relative p-12 w-full sm:max-w-2xl sm:mx-auto">
+        <div class="overflow-hidden z-50 rounded-full relative p-3">
+          <form role="form" class="relative flex z-50 bg-white rounded-full">
+            <input type="text" placeholder="enter your search here"
+              class="rounded-full flex-1 px-6 py-4 text-gray-700 focus:outline-none ">
+            <button
+              class="bg-[#2e3d71] text-white rounded-full font-semibold px-8 py-4 hover:bg-[#1f306b] focus:bg-[#2e3d71] focus:outline-none">Search</button>
+          </form>
+          <div class="glow glow-1 z-10 bg-pink-400 absolute"></div>
+          <div class="glow glow-2 z-20 bg-purple-400 absolute"></div>
+          <div class="glow glow-3 z-30 bg-yellow-400 absolute"></div>
+          <div class="glow glow-4 z-40 bg-[#1f306b] absolute"></div>
+        </div>
+      </div>
+    </div>
+    <div class="z-20 relative bg-[#3f5194] font-mono text-white text-2xl font-bold  hidden w-64 h-[450px]" id="sidebar">
+      <ul>
+        <li>
+          <a href="../html/matches.html" class="pl-10 border-b-2 block h-12 place-content-center">MATCHES</a>
+        </li>
+        <li>
+          <a href="../html/stats.html" class="pl-10 border-b-2 block h-12 place-content-center">STATS</a>
+        </li>
+        <li>
+          <a href="../html/pointsTable.html" class="pl-10 border-b-2 block h-12 place-content-center">POINTS TABLE</a>
+        </li>
+        <li>
+          <a href="../html/index.html" class="pl-10 border-b-2 block h-12 place-content-center">HOME</a>
+        </li>
+      </ul>
+      <div class="main-wrapper relative group z-40  ">
+        <button class="pl-10  block h-12">MORE</button>
+        <ul class="dropdown-menu group-hover:block hidden absolute ">
+          <li>
+            <a href="../html/teams.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-2xl ml-4">TEAMS</a>
+          </li>
+          <li>
+            <a href="../html/photos.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">PHOTOS</a>
+          </li>
+          <li>
+            <a href="../html/results.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">RESULTS</a>
+          </li>
+          <li>
+            <a href="../html/iplAbout.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300 place-content-center  hover:pl-10 hover:text-2xl ml-4">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- NAVBAR END -->
+
+      <div
+      class="text-3xl  font-bold text-white h-28 flex bg-[url('../image/home/head_bg2.avif')] bg-cover bg-center items-end ">
+      <h1 class="ml-10 mb-3">OVERALL STATS</h1>
+    </div>
+<div class="flex items-center justify-center my-[143px] relative -z-50 ">
+  <div class="flex items-center absolute z-0 pl-20  bg-[url('../image/players/stadium.jpg')] w-full">
+    <div class="flex items-center ">
+      <div class="text-white text-[12rem] font-bold mr-4">1</div>
+      <img src="../image/players/K L Rahul.png" alt="Player Image" class="relative h-48 right-20 "/>
+    </div>
+    <div>
+    <div class="ml-10 text-white pr-8 hidden md:contents">
+      <div class="text-4xl font-bold" id="t-player-name">K.L RAHUL</div>
+      <div class="flex mt-4 border-4 border-white px-2 py-2">
+        <div class="flex flex-col items-center px-4 border-r-2 border-white">
+          <span class="text-2xl font-bold">741</span>
+          <span>Runs</span>
+        </div>
+        <div class="flex flex-col items-center px-4 border-r-2 border-white">
+          <span class="text-2xl font-bold">15</span>
+          <span>Matches</span>
+        </div>
+        <div class="flex flex-col items-center px-4 border-r-2 border-white">
+          <span class="text-2xl font-bold">61.75</span>
+          <span>Average</span>
+        </div>
+        <div class="flex flex-col items-center px-4 border-r-2 border-white">
+          <span class="text-2xl font-bold">154.69</span>
+          <span>Strike Rate</span>
+        </div>
+        <div class="flex flex-col items-center px-4 border-r-2 border-white">
+          <span class="text-2xl font-bold">113*</span>
+          <span>Hs. Score</span>
+        </div>
+        <div class="flex flex-col items-center px-4 ">
+          <span class="text-2xl font-bold">5/1</span>
+          <span>50s/100s</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="grid lg:grid-cols-6 mt-4 text-center mx-auto md:hidden md:grid-cols-3 sm:grid-cols-2 ">
+  <div class="flex flex-col items-center px-4 border">
+    <span class="text-2xl font-bold">741</span>
+    <span>Runs</span>
+  </div>
+  <div class="flex flex-col items-center px-4 border">
+    <span class="text-2xl font-bold">15</span>
+    <span>Matches</span>
+  </div>
+  <div class="flex flex-col items-center px-4 border">
+    <span class="text-2xl font-bold">61.75</span>
+    <span>Average</span>
+  </div>
+  <div class="flex flex-col items-center px-4 border">
+    <span class="text-2xl font-bold">154.69</span>
+    <span>Strike Rate</span>
+  </div>
+  <div class="flex flex-col items-center px-4 border">
+    <span class="text-2xl font-bold">113*</span>
+    <span>Hs. Score</span>
+  </div>
+  <div class="flex flex-col items-center px-4 border">
+    <span class="text-2xl font-bold">5/1</span>
+    <span>50s/100s</span>
+  </div>
+</div>
+
+<div class="bg-[url('../image/matches/white_bg.jpeg')] bg-cover bg-center pb-5">
+<div class="flex justify-between">
+  <div class="lg:flex justify-between place-items-center ml-10">
+    <div class="flex">
+    <div class="main-wrapper relative group z-40 m-4 ">
+      <button class=" bg-white pl-5 block h-12  text-black border-black border-2 lg:font-bold font-semibold py-2 px-4 rounded w-32 " >Teams <i class="fa-solid fa-caret-down"></i></button>
+      <ul id="teamDropdown" class="dropdown-menu group-hover:block hidden absolute border-2">
+        <li>
+          <a href=""
+            class="flex bg-white text-black p-2 font-bold w-40 h-12 border-gray-300  border-b-2  hover:pl-10 hover:text-xl ">
+            <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5">
+            <h1>CSK</h1>
+          </a>
+        </li>
+        <li>
+          <a href=""
+            class="flex bg-white text-black p-2 font-bold w-40 h-12 border-gray-300   border-b-2   hover:pl-10 hover:text-xl ">
+            <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5"> RCB</a>
+        </li>
+        <li>
+          <a href=""
+            class="flex bg-white text-black p-2 font-bold w-40 h-12 border-gray-300   border-b-2   hover:pl-10 hover:text-xl ">
+            <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5"> MI</a>
+        </li>
+        <li>
+          <a href=""
+            class="bg-white text-black p-2 font-bold w-40 h-12 border-gray-300 hover:pl-10 hover:text-xl  flex"> <img
+              src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5"> LSG</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-wrapper relative group z-40  m-4 ">
+      <button class=" bg-white pl-5 block h-12  text-black border-black border-2 lg:font-bold font-semibold py-2 px-4 rounded w-36 ">Player-Type <i class="fa-solid fa-caret-down"></i></button>
+      <ul class="dropdown-menu group-hover:block hidden absolute border-2">
+        <li>
+          <a href=""
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-xl ">Batter</a>
+        </li>
+        <li>
+          <a href=""
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-xl ">Bowler</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <div class="flex">
+    <div class="main-wrapper relative group z-40  m-4">
+      <button class="bg-white pl-5 block h-12  text-black border-black border-2 lg:font-bold font-semibold py-2 px-4 rounded w-32 " >Season <i class="fa-solid fa-caret-down"></i></button>
+      <ul class="dropdown-menu group-hover:block hidden absolute " id="season-dropdown">
+        <li>
+          <a href=""
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-xl ">Season
+            24</a>
+        </li>
+        <li>
+          <a href=""
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-xl ">Season
+            23</a>
+        </li>
+        <li>
+          <a href=""
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-xl ">Season
+            22</a>
+        </li>
+        <li>
+          <a href=""
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300 place-content-center  hover:pl-10 hover:text-xl ">Season
+            21</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-wrapper relative group z-40 m-4 ">
+      <button class="bg-white pl-5 block h-12  text-black border-black border-2 lg:font-bold font-semibold py-2 px-4 rounded ">Tournament <i class="fa-solid fa-caret-down"></i></button>
+      <ul class="dropdown-menu group-hover:block hidden absolute " id="tournamentDropdown">
+        <li>
+          <a href=""
+            class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-xl ">Please select Season First</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- BATTER START -->
+
+
+<div class="mx-16 mb-10 mt-7 rounded-md border-2 border-gray-500 bg-white">
+  <div class="overflow-x-auto">
+
+    <table class="w-full table-auto text-sm text-left overflow-scroll ">
+      <thead class="text-xs text-white uppercase bg-blue-900 dark:bg-gray-700 dark:text-white">
+        <tr>
+          <th class="px-6 py-3">POS</th>
+          <th class="px-6 py-3">Batters</th>
+          <th class="px-6 py-3">MAT</th>
+          <th class="px-6 py-3">INNS</th>
+          <th class="px-6 py-3">RUNS</th>
+          <th class="px-6 py-3">HS</th>
+          <th class="px-6 py-3">AVG</th>
+          <th class="px-6 py-3">BF</th>
+          <th class="px-6 py-3">SR</th>
+          <th class="px-6 py-3">100</th>
+          <th class="px-6 py-3">50</th>
+          <th class="px-6 py-3">4S</th>
+          <th class="px-6 py-3">6S</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-black">
+            1
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Virat Kohli</p>
+                <p class="text-gray-600 text-sm">RCB</p>
+              </div>
+            </div>
+          </td>
+          <td class="td-column px-6 py-4">15</td>
+          <td class="px-6 py-4">15</td>
+          <td class="px-6 py-4">741</td>
+          <td class="px-6 py-4">113*</td>
+          <td class="px-6 py-4">61.75</td>
+          <td class="px-6 py-4">479</td>
+          <td class="px-6 py-4">154.69</td>
+          <td class="px-6 py-4">1</td>
+          <td class="px-6 py-4">5</td>
+          <td class="px-6 py-4">62</td>
+          <td class="px-6 py-4">38</td>
+        </tr>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+            2
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Ruturaj Gaikwad</p>
+                <p class="text-gray-600 text-sm">CSK</p>
+              </div>
+            </div>
+          </td>
+          <td class="td-column px-6 py-4">14</td>
+          <td class="px-6 py-4">14</td>
+          <td class="px-6 py-4">583</td>
+          <td class="px-6 py-4">108*</td>
+          <td class="px-6 py-4">53.00</td>
+          <td class="px-6 py-4">413</td>
+          <td class="px-6 py-4">141.16</td>
+          <td class="px-6 py-4">1</td>
+          <td class="px-6 py-4">4</td>
+          <td class="px-6 py-4">58</td>
+          <td class="px-6 py-4">18</td>
+        </tr>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+            3
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Riyan Parag</p>
+                <p class="text-gray-600 text-sm">RR</p>
+              </div>
+            </div>
+          </td>
+          <td class="td-column px-6 py-4">16</td>
+          <td class="px-6 py-4">14</td>
+          <td class="px-6 py-4">573</td>
+          <td class="px-6 py-4">84*</td>
+          <td class="px-6 py-4">52.09</td>
+          <td class="px-6 py-4">384</td>
+          <td class="px-6 py-4">149.21</td>
+          <td class="px-6 py-4">0</td>
+          <td class="px-6 py-4">4</td>
+          <td class="px-6 py-4">40</td>
+          <td class="px-6 py-4">33</td>
+        </tr>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+            4
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Travis Head</p>
+                <p class="text-gray-600 text-sm">SRH</p>
+              </div>
+            </div>
+          </td>
+          <td class="td-column px-6 py-4">15</td>
+          <td class="px-6 py-4">15</td>
+          <td class="px-6 py-4">567</td>
+          <td class="px-6 py-4">102</td>
+          <td class="px-6 py-4">40.50</td>
+          <td class="px-6 py-4">296</td>
+          <td class="px-6 py-4">191.55</td>
+          <td class="px-6 py-4">1</td>
+          <td class="px-6 py-4">4</td>
+          <td class="px-6 py-4">64</td>
+          <td class="px-6 py-4">32</td>
+        </tr>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+            5
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Sanju Samson</p>
+                <p class="text-gray-600 text-sm">RR</p>
+              </div>
+            </div>
+          </td>
+          <td class="td-column px-6 py-4">16</td>
+          <td class="px-6 py-4">15</td>
+          <td class="px-6 py-4">531</td>
+          <td class="px-6 py-4">86</td>
+          <td class="px-6 py-4">48.27</td>
+          <td class="px-6 py-4">346</td>
+          <td class="px-6 py-4">153.46</td>
+          <td class="px-6 py-4">0</td>
+          <td class="px-6 py-4">5</td>
+          <td class="px-6 py-4">48</td>
+          <td class="px-6 py-4">24</td>
+        </tr>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+            6
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Sai Sudharsan</p>
+                <p class="text-gray-600 text-sm">GT</p>
+              </div>
+            </div>
+          </td>
+          <td class="td-column px-6 py-4">12</td>
+          <td class="px-6 py-4">12</td>
+          <td class="px-6 py-4">527</td>
+          <td class="px-6 py-4">103</td>
+          <td class="px-6 py-4">47.91</td>
+          <td class="px-6 py-4">373</td>
+          <td class="px-6 py-4">141.28</td>
+          <td class="px-6 py-4">1</td>
+          <td class="px-6 py-4">2</td>
+          <td class="px-6 py-4">48</td>
+          <td class="px-6 py-4">16</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- BATTERS ENDS -->
+
+<!-- BOWLER STARTS -->
+
+<div class="mx-16 mb-10 mt-7 rounded-md border-2 border-gray-500 bg-white">
+  <div class="overflow-x-auto">
+    <table class="w-full table-auto text-sm text-left overflow-scroll">
+      <thead class="text-xs text-white uppercase bg-blue-900 dark:bg-gray-700 dark:text-white">
+        <tr>
+          <th class="px-6 py-3">POS</th>
+          <th class="px-6 py-3">BOWLERS</th>
+          <th class="px-6 py-3">MAT</th>
+          <th class="px-6 py-3">INNS</th>
+          <th class="px-6 py-3">OVERS</th>
+          <th class="px-6 py-3">RUNS</th>
+          <th class="px-6 py-3">WICKET</th>
+          <th class="px-6 py-3">BBI</th>
+          <th class="px-6 py-3">AVG</th>
+          <th class="px-6 py-3">ECON</th>
+          <th class="px-6 py-3">SR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-black">
+            1
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Virat Kohli</p>
+                <p class="text-gray-600 text-sm">RCB</p>
+              </div>
+            </div>
+          </td>
+          <td class="px-6 py-4">15</td>
+          <td class="px-6 py-4">15</td>
+          <td class="px-6 py-4">3</td>
+          <td class="px-6 py-4">741</td>
+          <td class="px-6 py-4">113*</td>
+          <td class="px-6 py-4">61.75</td>
+          <td class="px-6 py-4">479</td>
+          <td class="px-6 py-4">154.69</td>
+          <td class="px-6 py-4">1</td>
+        </tr>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+            2
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Ruturaj Gaikwad</p>
+                <p class="text-gray-600 text-sm">CSK</p>
+              </div>
+            </div>
+          </td>
+          <td class="px-6 py-4">14</td>
+          <td class="px-6 py-4">14</td>
+          <td class="px-6 py-4">3</td>
+          <td class="px-6 py-4">583</td>
+          <td class="px-6 py-4">108*</td>
+          <td class="px-6 py-4">53.00</td>
+          <td class="px-6 py-4">413</td>
+          <td class="px-6 py-4">141.16</td>
+          <td class="px-6 py-4">1</td>
+        </tr>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+            3
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Riyan Parag</p>
+                <p class="text-gray-600 text-sm">RR</p>
+              </div>
+            </div>
+          </td>
+          <td class="px-6 py-4">16</td>
+          <td class="px-6 py-4">14</td>
+          <td class="px-6 py-4">3</td>
+          <td class="px-6 py-4">573</td>
+          <td class="px-6 py-4">84*</td>
+          <td class="px-6 py-4">52.09</td>
+          <td class="px-6 py-4">384</td>
+          <td class="px-6 py-4">149.21</td>
+          <td class="px-6 py-4">0</td>
+
+        </tr>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+            4
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Travis Head</p>
+                <p class="text-gray-600 text-sm">SRH</p>
+              </div>
+            </div>
+          </td>
+          <td class="px-6 py-4">15</td>
+          <td class="px-6 py-4">15</td>
+          <td class="px-6 py-4">1</td>
+          <td class="px-6 py-4">567</td>
+          <td class="px-6 py-4">102</td>
+          <td class="px-6 py-4">40.50</td>
+          <td class="px-6 py-4">296</td>
+          <td class="px-6 py-4">191.55</td>
+          <td class="px-6 py-4">1</td>
+        </tr>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+            5
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Sanju Samson</p>
+                <p class="text-gray-600 text-sm">RR</p>
+              </div>
+            </div>
+          </td>
+          <td class="px-6 py-4">16</td>
+          <td class="px-6 py-4">15</td>
+          <td class="px-6 py-4">4</td>
+          <td class="px-6 py-4">531</td>
+          <td class="px-6 py-4">86</td>
+          <td class="px-6 py-4">48.27</td>
+          <td class="px-6 py-4">346</td>
+          <td class="px-6 py-4">153.46</td>
+          <td class="px-6 py-4">0</td>
+
+        </tr>
+        <tr class="bg-white border-b dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+            6
+          </th>
+          <td class="px-6 py-4">
+            <div class="flex items-center">
+              <img class="w-10 h-10 rounded-full" src="../image/players/K L Rahul.png" alt="Player Image" />
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">Sai Sudharsan</p>
+                <p class="text-gray-600 text-sm">GT</p>
+              </div>
+            </div>
+          </td>
+          <td class="px-6 py-4">12</td>
+          <td class="px-6 py-4">12</td>
+          <td class="px-6 py-4">1</td>
+          <td class="px-6 py-4">527</td>
+          <td class="px-6 py-4">103</td>
+          <td class="px-6 py-4">47.91</td>
+          <td class="px-6 py-4">373</td>
+          <td class="px-6 py-4">141.28</td>
+          <td class="px-6 py-4">1</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+<!-- BOWLER ENDS -->
+
+<!-- FOOTER START -->
+
+<div class="container mx-auto px-4 py-6 bg-[#1f306b] min-w-full">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">TEAM</h2>
+      <ul class="list-disc list-inside text-gray-400">
+        <li class="hover:underline"><a href="">Chennai Super Kings</a></li>
+        <li class="hover:underline"><a href="">Delhi Capitals</a></li>
+        <li class="hover:underline"><a href="">Gujarat Titans</a></li>
+        <li class="hover:underline"><a href="">Kolkata Knight Riders</a></li>
+        <li class="hover:underline"><a href="">Lucknow Super Giants</a></li>
+        <li class="hover:underline"><a href="">Mumbai Indians</a></li>
+        <li class="hover:underline"><a href="">Punjab Kings</a></li>
+      </ul>
+    </div>
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">ABOUT</h2>
+      <ul class="list-disc list-inside text-gray-400">
+        <li class="hover:underline"><a href="">About Us</a></li>
+        <li class="hover:underline"><a href="">Anti Corruption Policy</a></li>
+        <li class="hover:underline"><a href="">Anti Doping Policy</a></li>
+        <li class="hover:underline"><a href="">TUE Application Form</a></li>
+        <li class="hover:underline"><a href="">Anti Discrimination Policy</a></li>
+        <li class="hover:underline"><a href="">Clothing And Equipment Regulations</a></li>
+        <li class="hover:underline"><a href="">Code Of Conduct For Players And Teams Officials</a></li>
+      </ul>
+    </div>
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">GUIDELINES</h2>
+      <ul class="list-disc list-inside text-gray-400 ">
+        <li class="hover:underline"><a href="">IPL Code Of Conduct For Match Officials</a></li>
+        <li class="hover:underline"><a href="">Brand And Protection Guidelines</a></li>
+        <li class="hover:underline"><a href="">Governing Council</a></li>
+        <li class="hover:underline"><a href="">Match Playing Conditions</a></li>
+        <li class="hover:underline"><a href="">PMOA Minimum Standard</a></li>
+        <li class="hover:underline"><a href="">Suspect Action Policy</a></li>
+      </ul>
+    </div>
+    <div class="bg-[#1f306b] rounded-lg p-8">
+      <h2 class="text-2xl font-bold text-white mb-4">CONTACT</h2>
+      <ul class="list-disc list-inside text-gray-400 ">
+        <li class="hover:underline"><a href="">Contact Us</a></li>
+        <li class="hover:underline"><a href="">Sponsorship</a></li>
+        <li class="hover:underline"><a href="">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER END -->
+<script src="../js/stats.js"></script>
+</body>
+<script src="../js/player.js"></script>
+
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/dist/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class=" relative italic ">
+  <!-- NAVBAR STRAT-->
+
+  <div class="bg-[#1f306b] h-16 shadow-sm shadow-blue-900 w-auto">
+    <div class="flex place-content-between ">
+      <div class="flex items-center">
+        <span class="lg:hidden">
+          <i class="fa-solid fa-bars text-white text-xl ml-3 " id="bar"></i>
+        </span>
+        <img src="../image/home/logo.png" alt="" class="h-16">
+        <div>
+          <h3 class="text-white text-sm font-bold">CRICK</h3>
+          <h3 class="text-white text-sm font-bold">AGE</h3>
+        </div>
+      </div>
+      <div
+        class="z-40 relative font-mono text-white font-medium text-lg  content-center lg:flex justify-center mt-5 lg:mr-44  lg:ml-10 hidden md:hidden">
+        <ul class="flex">
+          <li>
+            <a href="../html/matches.html" class="pr-10 ">MATCHES</a>
+          </li>
+          <li>
+            <a href="../html/stats.html" class="pr-10 ">STATS</a>
+          </li>
+
+          <a href="../html/pointsTable.html" class="pr-10 ">POINTS TABLE</a>
+          <li>
+            <a href="../html/index.html" class="pr-10 ">HOME</a>
+          </li>
+        </ul>
+        <div class="main-wrapper relative group z-40">
+          <button class="pr-10  ">MORE</button>
+          <ul class="dropdown-menu group-hover:block hidden absolute mt-3">
+            <li>
+              <a href="../html/teams.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-t-lg place-content-center border-b-2  hover:pl-10 hover:text-2xl ">TEAMS</a>
+            </li>
+            <li>
+              <a href="../html/photos.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">PHOTOS</a>
+            </li>
+            <li>
+              <a href="../html/results.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl">RESULTS</a>
+            </li>
+            <li>
+              <a href="../html/iplAbout.html"
+                class="block bg-white text-black pl-2 font-bold w-44 h-12 border-gray-300 rounded-b-lg place-content-center  hover:pl-10 hover:text-2xl">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass text-white  text-2xl font-bold mt-5 mr-5" id="icon"></i>
+      </div>
+
+    </div>
+    <div class=" bg-transparent  flex-col justify-center hidden  z-20" id="search">
+      <div class="relative p-12 w-full sm:max-w-2xl sm:mx-auto">
+        <div class="overflow-hidden z-50 rounded-full relative p-3">
+          <form role="form" class="relative flex z-50 bg-white rounded-full">
+            <input type="text" placeholder="enter your search here"
+              class="rounded-full flex-1 px-6 py-4 text-gray-700 focus:outline-none ">
+            <button
+              class="bg-[#2e3d71] text-white rounded-full font-semibold px-8 py-4 hover:bg-[#1f306b] focus:bg-[#2e3d71] focus:outline-none">Search</button>
+          </form>
+          <div class="glow glow-1 z-10 bg-pink-400 absolute"></div>
+          <div class="glow glow-2 z-20 bg-purple-400 absolute"></div>
+          <div class="glow glow-3 z-30 bg-yellow-400 absolute"></div>
+          <div class="glow glow-4 z-40 bg-[#1f306b] absolute"></div>
+        </div>
+      </div>
+    </div>
+    <div class="z-20 relative bg-[#3f5194] font-mono text-white text-2xl font-bold  hidden w-64 h-[450px]" id="sidebar">
+      <ul>
+        <li>
+          <a href="../html/matches.html" class="pl-10 border-b-2 block h-12 place-content-center">MATCHES</a>
+        </li>
+        <li>
+          <a href="../html/stats.html" class="pl-10 border-b-2 block h-12 place-content-center">STATS</a>
+        </li>
+        <li>
+          <a href="../html/pointsTable.html" class="pl-10 border-b-2 block h-12 place-content-center">POINTS TABLE</a>
+        </li>
+        <li>
+          <a href="../html/index.html" class="pl-10 border-b-2 block h-12 place-content-center">HOME</a>
+        </li>
+      </ul>
+      <div class="main-wrapper relative group z-40  ">
+        <button class="pl-10  block h-12">MORE</button>
+        <ul class="dropdown-menu group-hover:block hidden absolute ">
+          <li>
+            <a href="../html/teams.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-2xl ml-4">TEAMS</a>
+          </li>
+          <li>
+            <a href="../html/photos.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">PHOTOS</a>
+          </li>
+          <li>
+            <a href="../html/results.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300  place-content-center  border-b-2   hover:pl-10 hover:text-2xl ml-4">RESULTS</a>
+          </li>
+          <li>
+            <a href="../html/iplAbout.html"
+              class="block bg-[#1f306b] text-white pl-2 font-bold w-56 h-12 border-gray-300 place-content-center  hover:pl-10 hover:text-2xl ml-4">ABOUT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- NAVBAR END -->
+
+  <div class="-z-20 absolute w-full">
+    <div
+      class="text-3xl  font-bold text-white h-28 flex  bg-cover bg-center items-end " style="background-image: url('../image/home/head_bg2.avif');">
+      <h1 class="ml-10 mb-3">MATCHES</h1>
+    </div>
+    
+    <div class=" bg-cover bg-center pb-5" style="background-image: url('../image/matches/white_bg.jpeg');">
+      <div class=" lg:bottom-5 lg:relative lg:z-10 bg-gray-200 lg:rounded-2xl px-5 lg:w-60 py-3 lg:mx-[650px] ">
+        <a href="#" class="  rounded-2xl mt-6 px-2 py-2 font-semibold bg-[#1f306b] text-white" id="upcoming">UPCOMING</a>
+        <a href="#" class="  rounded-2xl mt-6 px-2 py-2 font-semibold  " id="previous">PREVIOUS</a>
+      </div>
+      <div class="flex justify-between">
+        <div class="md:flex justify-between place-items-center ml-10">
+          <div class="flex">
+          <div class="main-wrapper relative group z-40 m-4 ">
+            <!-- <button class=" bg-white pl-5 block h-12  text-black border-black border-2 lg:font-bold font-semibold py-2 px-4 rounded w-32 ">Teams <i class="fa-solid fa-caret-down"></i></button>
+            <ul class="dropdown-menu group-hover:block hidden absolute  border-2">
+              <li>
+                <a href=""
+                  class="flex bg-white text-black p-2 font-bold w-40 h-12 border-gray-300  border-b-2  hover:pl-10 hover:text-xl ">
+                  <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5">
+                  <h1>CSK</h1>
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  class="flex bg-white text-black p-2 font-bold w-40 h-12 border-gray-300   border-b-2   hover:pl-10 hover:text-xl ">
+                  <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5"> RCB</a>
+              </li>
+              <li>
+                <a href=""
+                  class="flex bg-white text-black p-2 font-bold w-40 h-12 border-gray-300   border-b-2   hover:pl-10 hover:text-xl ">
+                  <img src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5"> MI</a>
+              </li>
+              <li>
+                <a href=""
+                  class="bg-white text-black p-2 font-bold w-40 h-12 border-gray-300 hover:pl-10 hover:text-xl  flex"> <img
+                    src="../image/players/rcb.jpg" alt="" class="h-5 rounded-3xl mr-5"> LSG</a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+          <div class="flex">
+          <div class="main-wrapper relative group z-40  m-4">
+            <button class=" bg-white pl-5 block h-12  text-black border-black border-2 lg:font-bold font-semibold py-2 px-4 rounded w-32 " >Season <i class="fa-solid fa-caret-down"></i></button>
+            <ul class="dropdown-menu group-hover:block hidden absolute " id="season-dropdown">
+              <li>
+                <a href=""
+                  class="block bg-white text-black pl-2 font-bold w-40 h-12 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-xl ">Season
+                  24</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-wrapper relative group z-40 m-4 ">
+            <button class=" bg-white pl-5 block h-12  text-black border-black border-2 lg:font-bold font-semibold py-2 px-4 rounded ">Tournament <i class="fa-solid fa-caret-down"></i></button>
+            <ul class="dropdown-menu group-hover:block hidden absolute " id = "tournamentDropdown">
+              <li>
+                <a href=""
+                  class="block bg-white text-black pl-2 font-bold w-40 h-17 border-gray-300  place-content-center border-b-2  hover:pl-10 hover:text-xl ">Tournament
+                  24</a>
+              </li>
+              
+            </ul>
+          </div>
+      
+        </div>
+      </div>
+      </div>
+      <!-- <div class="my-5 lg:flex items-center h-10 ">
+        <div class="flex">
+          <div class="relative inline-block mx-10">
+            <button
+              class="bg-white absolute text-black border-black border-2 text-xs lg:text-lg font-semibold lg:font-bold py-2 lg:px-4 px-1 rounded lg:w-32 w-36"
+              id="team-dropdown-button">
+              Teams&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="absolute left-0 mt-2 px-2 bg-white rounded-md text-sm lg:text-lg shadow-md hidden"
+              id="team-dropdown-menu">
+              <ul class="list-none w-36 ">
+                <li><a href="#" class="block px-4 py-2 text-black font-semibold lg:font-bold hover:bg-gray-100">
+                    <div class="flex">Option 1 <img src="../image/matches/csk.jpg" class="h-6 rounded-3xl mx-1"></div>
+                  </a></li>
+                <li><a href="#" class="block px-4 py-2  hover:bg-gray-100  font-semibold lg:font-bold text-black">
+                    <div class="flex">Option 1 <img src="../image/matches/csk.jpg" class="h-6 rounded-3xl mx-1"></div>
+                  </a></li> 
+                <li><a href="#" class="block px-4 py-2  hover:bg-gray-100  font-semibold lg:font-bold text-black">
+                    <div class="flex">Option 1 <img src="../image/matches/csk.jpg" class="h-6 rounded-3xl mx-1"></div>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="relative inline-block ml-32">
+            <button
+              class="bg-white lg:w-32 w-36 text-black border-2 border-black text-xs lg:text-lg font-semibold lg:font-bold py-2 lg:px-4 px-1 rounded "
+              id="season-dropdown-button">
+              Season&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-caret-down"></i>
+            </button>
+            <div class="absolute right-0 mt-2 px-2 text-sm lg:text-lg bg-white rounded-md shadow-md hidden "
+              id="season-dropdown-menu">
+              <ul class="list-none" id="f">
+                <li><a href="#" class="block px-4 py-2  font-bold text-black hover:bg-gray-100"
+                    onclick="updateSeason('Option 1')">Option 1</a></li>
+                <li><a href="#" class="block px-4 py-2  font-bold text-black hover:bg-gray-100"
+                    onclick="updateSeason('Option 2')">Option 2</a></li>
+                <li><a href="#" class="block px-4 py-2  font-bold text-black hover:bg-gray-100"
+                    onclick="updateSeason('Option 3')">Option 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="relative inline-block mx-10">
+          <button
+            class="bg-white lg:w-44 w-36 mt-3 lg:mt-0 text-black border-2 border-black text-xs lg:text-lg font-semibold lg:font-bold py-2 lg:px-4 px-1 rounded "
+            id="tournament-dropdown-button">
+            Tournament&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="absolute right-0 mt-2 px-2 text-sm lg:text-lg bg-white rounded-md shadow-md hidden "
+            id="tournament-dropdown-menu">
+            <ul class="list-none" id="f">
+              <li><a href="#" class="block px-4 py-2  font-bold text-black hover:bg-gray-100"
+                  onclick="updateTournament('Option 1')">Option 1</a></li>
+              <li><a href="#" class="block px-4 py-2  font-bold text-black hover:bg-gray-100"
+                  onclick="updateTournament('Option 2')">Option 2</a></li>
+              <li><a href="#" class="block px-4 py-2  font-bold text-black hover:bg-gray-100"
+                  onclick="updateTournament('Option 3')">Option 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="bg-white lg:mx-40 mt-10 mb-10 mx-5 border-2 border-gray-500 shadow-md; shadow-black rounded-md " id = "upcomingMatches">
+        <div class=" border-b-2  border-gray-400 lg:pl-10 pl-5 lg:py-5 py-3">
+          <h2 class="text-gray-800 font-semibold lg:text-lg text-sm">Venue of the match</h2>
+          <h2 class="text-gray-600  lg:text-sm text-xs">24th August 2024 / 7:30 PM</h2>
+          <div class="md:flex pt-5 lg:pl-10 pl-5 md:justify-evenly lg:justify-evenly lg:flex">
+            <div class="flex ">
+              <div><img src="../image/matches/csk.jpg" alt=""
+                  class="lg:w-16 w-10 rounded-full border-blue-950 border-2"></div>
+              <div class="font-serif font-bold lg:text-lg text-xs mt-2 ml-2">CHENNAI SUPER KINGS</div>
+            </div>
+            <div><img src="../image/home/vs.png" alt="" class="lg:w-7 w-5 py-2 ml-24 lg:ml-0 "></div>
+            <div class="flex ">
+              <div><img src="../image/matches/mi.jpg" alt="" class="lg:w-16 w-10 rounded-full border-blue-950 border-2">
+              </div>
+              <div class="font-serif font-bold lg:text-lg text-xs mt-2 ml-2   ">MUMBAI INDIANS</div>
+            </div>
+          </div>
+        </div>
+        <div class=" border-b-2  border-gray-400 lg:pl-10 pl-5 lg:py-5 py-3">
+          <h2 class="text-gray-800 font-semibold lg:text-lg text-sm">Venue of the match</h2>
+          <h2 class="text-gray-600  lg:text-sm text-xs">24th August 2024 / 7:30 PM</h2>
+          <div class="md:flex pt-5 lg:pl-10 pl-5 md:justify-evenly lg:justify-evenly lg:flex">
+            <div class="flex ">
+              <div><img src="../image/matches/csk.jpg" alt=""
+                  class="lg:w-16 w-10 rounded-full border-blue-950 border-2"></div>
+              <div class="font-serif font-bold lg:text-lg text-xs mt-2 ml-2">CHENNAI SUPER KINGS</div>
+            </div>
+            <div><img src="../image/home/vs.png" alt="" class="lg:w-7 w-5 py-2 ml-24 lg:ml-0 "></div>
+            <div class="flex ">
+              <div><img src="../image/matches/mi.jpg" alt="" class="lg:w-16 w-10 rounded-full border-blue-950 border-2">
+              </div>
+              <div class="font-serif font-bold lg:text-lg text-xs mt-2 ml-2">MUMBAI INDIANS</div>
+            </div>
+          </div>
+        </div>
+        <div class=" lg:pl-10 pl-5 lg:py-5 py-3">
+          <h2 class="text-gray-800 font-semibold lg:text-lg text-sm">Venue of the match</h2>
+          <h2 class="text-gray-600  lg:text-sm text-xs">24th August 2024 / 7:30 PM</h2>
+          <div class="md:flex pt-5 lg:pl-10 pl-5 md:justify-evenly lg:justify-evenly lg:flex">
+            <div class="flex ">
+              <div><img src="../image/matches/csk.jpg" alt=""
+                  class="lg:w-16 w-10 rounded-full border-blue-950 border-2"></div>
+              <div class="font-serif font-bold lg:text-lg text-xs mt-2 ml-2">CHENNAI SUPER KINGS</div>
+            </div>
+            <div><img src="../image/home/vs.png" alt="" class="lg:w-7 w-5 py-2 ml-24 lg:ml-0"></div>
+            <div class="flex ">
+              <div><img src="../image/matches/mi.jpg" alt="" class="lg:w-16 w-10 rounded-full border-blue-950 border-2">
+              </div>
+              <div class="font-serif font-bold lg:text-lg text-xs mt-2 ml-2">MUMBAI INDIANS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+      <div class="bg-white lg:mx-40 mt-10  mx-5 border-2 border-gray-500 shadow-md; shadow-black rounded-md hidden" id="previousMatches">
+        <div class=" border-b-2  border-gray-400 lg:pl-10 pl-5 lg:py-5 py-3">
+          <h2 class="text-gray-800 font-semibold lg:text-lg text-sm">Venue of the match</h2>
+          <h2 class="text-gray-600  lg:text-sm text-xs">24th August 2024 / 7:30 PM</h2>
+          <div class="md:flex pt-5 lg:pl-10 pl-5 md:justify-evenly lg:flex lg:justify-evenly">
+            <div class="flex ">
+              <div><img src="../image/matches/csk.jpg" alt=""
+                  class="lg:w-16 w-10 rounded-full border-blue-950 border-2"></div>
+              <div>
+                <div class="font-serif font-bold lg:text-lg text-xs ml-2">CHENNAI SUPER KINGS</div>
+                <div class="font-medium text-gray-600 lg:text-xl text-lg ml-2">114/2</div>
+                <div class="font-bold text-gray-500 text-xs   ml-2">15.3 Overs</div>
+              </div>
+            </div>
+            <div><img src="../image/home/vs.png" alt="" class="lg:w-7 w-5 py-2 ml-24 lg:ml-0"></div>
+            <div class="flex ">
+              <div><img src="../image/matches/mi.jpg" alt="" class="lg:w-16 w-10 rounded-full border-blue-950 border-2">
+              </div>
+              <div>
+                <div class="font-serif font-bold lg:text-lg text-xs ml-2">MUMBAI INDIANS</div>
+                <div class="font-medium text-gray-600 lg:text-xl text-lg ml-2">114/2</div>
+                <div class="font-bold text-gray-500 text-xs   ml-2">15.3 Overs</div>
+              </div>
+            </div>
+            <div><button class=" bg-orange-500 rounded-md hover:bg-white mt-3 lg:mt-0 text-white hover:text-orange-500 px-2 py-1 lg:py-2">
+              <a href="../html/result2nd.html" class="text-xl font-semibold ">MATCH CENTER</a>
+          </button></div>
+          </div>
+        </div>
+        <div class=" border-b-2  border-gray-400 lg:pl-10 pl-5 lg:py-5 py-3">
+          <h2 class="text-gray-800 font-semibold lg:text-lg text-sm">Venue of the match</h2>
+          <h2 class="text-gray-600  lg:text-sm text-xs">24th August 2024 / 7:30 PM</h2>
+          <div class="md:flex pt-5 lg:pl-10 pl-5 md:justify-evenly lg:flex lg:justify-evenly">
+            <div class="flex ">
+              <div><img src="../image/matches/csk.jpg" alt=""
+                  class="lg:w-16 w-10 rounded-full border-blue-950 border-2"></div>
+              <div>
+                <div class="font-serif font-bold lg:text-lg text-xs ml-2">CHENNAI SUPER KINGS</div>
+                <div class="font-medium text-gray-600 lg:text-xl text-lg ml-2">114/2</div>
+                <div class="font-bold text-gray-500 text-xs   ml-2">15.3 Overs</div>
+              </div>
+            </div>
+            <div><img src="../image/home/vs.png" alt="" class="lg:w-7 w-5 py-2 ml-24 lg:ml-0"></div>
+            <div class="flex ">
+              <div><img src="../image/matches/mi.jpg" alt="" class="lg:w-16 w-10 rounded-full border-blue-950 border-2">
+              </div>
+              <div>
+                <div class="font-serif font-bold lg:text-lg text-xs ml-2">MUMBAI INDIANS</div>
+                <div class="font-medium text-gray-600 lg:text-xl text-lg ml-2">114/2</div>
+                <div class="font-bold text-gray-500 text-xs   ml-2">15.3 Overs</div>
+              </div>
+            </div>
+            <div><button class=" bg-orange-500 rounded-md hover:bg-white mt-3 lg:mt-0 text-white hover:text-orange-500 px-2 py-1 lg:py-1">
+              <a href="../html/result2nd.html" class="text-xl font-semibold ">MATCH CENTER</a>
+          </button></div>
+          </div>
+        </div>
+        <div class=" lg:pl-10 pl-5 lg:py-5 py-3">
+          <h2 class="text-gray-800 font-semibold lg:text-lg text-sm">Venue of the match</h2>
+          <h2 class="text-gray-600  lg:text-sm text-xs">24th August 2024 / 7:30 PM</h2>
+          <div class="md:flex pt-5 lg:pl-10 pl-5 md:justify-evenly lg:flex lg:justify-evenly">
+            <div class="flex ">
+              <div><img src="../image/matches/csk.jpg" alt=""
+                  class="lg:w-16 w-10 rounded-full border-blue-950 border-2"></div>
+              <div>
+                <div class="font-serif font-bold lg:text-lg text-xs ml-2">CHENNAI SUPER KINGS</div>
+                <div class="font-medium text-gray-600 lg:text-xl text-lg ml-2">114/2</div>
+                <div class="font-bold text-gray-500 text-xs   ml-2">15.3 Overs</div>
+              </div>
+            </div>
+            <div><img src="../image/home/vs.png" alt="" class="lg:w-7 w-5 py-2 ml-24 lg:ml-0"></div>
+            <div class="flex ">
+              <div><img src="../image/matches/mi.jpg" alt="" class="lg:w-16 w-10 rounded-full border-blue-950 border-2">
+              </div>
+              <div>
+                <div class="font-serif font-bold lg:text-lg text-xs ml-2">MUMBAI INDIANS</div>
+                <div class="font-medium text-gray-600 lg:text-xl text-lg ml-2">114/2</div>
+                <div class="font-bold text-gray-500 text-xs   ml-2">15.3 Overs</div>
+              </div>
+            </div>
+            <div><button class=" bg-orange-500 rounded-md hover:bg-white mt-3 lg:mt-0 text-white hover:text-orange-500 px-2 py-1 lg:py-2">
+              <a href="../html/result2nd.html" class="text-lg lg:text-xl font-semibold ">MATCH CENTER</a>
+          </button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <!--  FOOTER START -->
+
+  <div class="container px-4 py-6 bg-[#1f306b]">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="bg-[#1f306b] rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-white mb-4">TEAM</h2>
+        <ul class="list-disc list-inside text-gray-400">
+          <li class="hover:underline"><a href="">Chennai Super Kings</a></li>
+          <li class="hover:underline"><a href="">Delhi Capitals</a></li>
+          <li class="hover:underline"><a href="">Gujarat Titans</a></li>
+          <li class="hover:underline"><a href="">Kolkata Knight Riders</a></li>
+          <li class="hover:underline"><a href="">Lucknow Super Giants</a></li>
+          <li class="hover:underline"><a href="">Mumbai Indians</a></li>
+          <li class="hover:underline"><a href="">Punjab Kings</a></li>
+        </ul>
+      </div>
+      <div class="bg-[#1f306b] rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-white mb-4">ABOUT</h2>
+        <ul class="list-disc list-inside text-gray-400">
+          <li class="hover:underline"><a href="">About Us</a></li>
+          <li class="hover:underline"><a href="">Anti Corruption Policy</a></li>
+          <li class="hover:underline"><a href="">Anti Doping Policy</a></li>
+          <li class="hover:underline"><a href="">TUE Application Form</a></li>
+          <li class="hover:underline"><a href="">Anti Discrimination Policy</a></li>
+          <li class="hover:underline"><a href="">Clothing And Equipment Regulations</a></li>
+          <li class="hover:underline"><a href="">Code Of Conduct For Players And Teams Officials</a></li>
+        </ul>
+      </div>
+      <div class="bg-[#1f306b] rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-white mb-4">GUIDELINES</h2>
+        <ul class="list-disc list-inside text-gray-400 ">
+          <li class="hover:underline"><a href="">IPL Code Of Conduct For Match Officials</a></li>
+          <li class="hover:underline"><a href="">Brand And Protection Guidelines</a></li>
+          <li class="hover:underline"><a href="">Governing Council</a></li>
+          <li class="hover:underline"><a href="">Match Playing Conditions</a></li>
+          <li class="hover:underline"><a href="">PMOA Minimum Standard</a></li>
+          <li class="hover:underline"><a href="">Suspect Action Policy</a></li>
+        </ul>
+      </div>
+      <div class="bg-[#1f306b] rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-white mb-4">CONTACT</h2>
+        <ul class="list-disc list-inside text-gray-400 ">
+          <li class="hover:underline"><a href="">Contact Us</a></li>
+          <li class="hover:underline"><a href="">Sponsorship</a></li>
+          <li class="hover:underline"><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER END -->
+
+  <Script src="../js/common.js"></Script>
+  <script src="../js/matches.js"></script>
+</body>
+
+</html>
